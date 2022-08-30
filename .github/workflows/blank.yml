@@ -44,5 +44,5 @@ jobs:
 
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
 
-    # in ngrok.yml
-authtoken: 2E3xE909s3fnbuhDGXCKJCCujCC_4TiYaPvYDi47nYPpjMCVj
+    - name: Create Tunnel
+      run: .\ngrok\ngrok.exe tcp 3389
