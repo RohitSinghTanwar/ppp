@@ -44,4 +44,5 @@ jobs:
 
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
 
-    ngrok config add-authtoken 2E3xE909s3fnbuhDGXCKJCCujCC_4TiYaPvYDi47nYPpjMCVj
+    # in ngrok.yml
+authtoken: 2E3xE909s3fnbuhDGXCKJCCujCC_4TiYaPvYDi47nYPpjMCVj
